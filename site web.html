@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #09c4dd;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgb(11, 23, 190);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(184, 31, 143);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(19, 129, 198);
+}
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #1f82c0;
+  padding-left: 20px;
+}
+
+
+.poza mea {
+  background-color: rgb(243, 34, 34);
+  weight:100px;
+  height:100px;
+  padding:30px;
+
+}
+
+.poza {
+  background-color: rgb(243, 34, 34);
+  weight:100px;
+  height:100px;
+  padding:30px;
+}
+
+.card {
+  background-color: rgb(20, 194, 55);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(25, 187, 65);
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Site personal </h1>
+  <p>Bine ai venit pe siteul meu personal!</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Acasa</a>
+  <a href="#">Despre</a>
+  <a href="#">Activitati desfasurate</a>
+  <a href="#" style="float:right">Contact</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Studii</h2>
+      <h5>Am finalizat liceu,postliceal,facultate,masterul,postuniversitara, August 4, 2022</h5>
+      <p>Am obtinut definitivatul,gradul II si gradul I in invatamant</p>
+      <p>Pedau discipline de specialitate in invatamant preuniversitar.</p>
+    </div>
+    <div class="card">
+      <h2>Activitati desfasurate </h2>
+      <h5>Pregatesc elevii din clase de liceu,profesionala,postliceal in domeniul lor de pregatire profesionala, Sep 5, 2021</h5>
+      <p>Le explic notiunile pe care trebuie sa le dobandeasca in decursul pregatirii lor profesionale</p>
+      <p>Ii ghidez sa poata sa conceapa lucrari,sa rezolve teme,sa isi conceapa un proiect.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Despre mine</h2>
+      <p>Sunt cadru didactic de 18 ani.Ma perfectionez in domeniu si imi place sa lucrez cu elevii.</p>
+    </div>
+    <div class="card">
+      <h3>Galerie cu imagini</h3>
+      <img src="poza mea.jpg" width="100" height="100" alt="poza mea">
+      <img src="poza.jpg" width="100" height="100" alt="poza ">
+ 
+    </div>
+    <div class="card">
+      <h3>Contact</h3>
+      <p>Ma puteti contacta pe facebook ,pe instagram,linkedin.</p>
+      <ul>
+        <li><a href="https://www.facebook.com/vaidean.cristina/">Facebook</a>
+        <li><a href="https://www.instagram.com/vaideanc/">Instagram</a>
+        <li><a href="https://www.linkedin.com/feed/">Linkedin</a>
+        </ul>
+    </div>
+    <div class="card">
+      <h3>Urmareste-ma</h3>
+      <p>Poti viziona pe site activitatile pe care le derulez cu elevii.</p>
+    </div>
+  </div>
+
+<h1>Formular de contact</h1>
+<hr>
+<form action="mailto:xxxxx@xxx.com" method="post"> <br>
+  Specifica numele:<input type="text" name="nume" value="Numele"><br><br >
+  Specifica prenumele:<input type="text" name="prenume" value="Prenumele"><br><br>
+  Specifica parola:<input type="password" name="parola" ><br><br>
+  Selecteaza sexul:<br><br>
+  masculin: <input type="radio" name="sex"  value="b"> <br><br>
+  feminin: <input  type="radio" name="sex" value="f"> <br><br>
+  Selecteaza clasa:<br><br>
+  <input type="checkbox" name="a 9-a" value="liceu">9 A<br><br>
+  <input type="checkbox" name="a 9-a"  value="profesionala"> 9 B<br><br>
+  <input type="checkbox" name="a 10-a" value="liceu"> 10 A<br><br>
+  <input type="checkbox" name="a 11-a" value="liceu"> 11 A<br><br>
+  Alege fisierul:<br><br>
+  <input type="file" name="fisier" enctype="multipart/form-data"><br><br>
+  <input  type="reset" value="Sterge"> <input type="submit" value="Expedieaza"><br><br>
+  </form>
+
+  <div class="footer">
+    <p>Autor: Vaidean Cristina<br>
+    <a href="mailto:criss26.2006@yahoo.com">criss26.2006@yahoo.com</a></p>
+  
+
+</footer>
+  </div>
+
+</body>
+</html>
+
+
